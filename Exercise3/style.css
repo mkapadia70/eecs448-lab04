@@ -1,0 +1,98 @@
+*{
+    font-family:'Lato', sans-serif;
+}
+input, button
+{
+    width:250px;
+    height:50px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid Yellow;
+    outline:none;
+    font-size:20px;
+    background-color: FloralWhite;
+    border-color: black;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin-bottom:3px;
+}
+
+label
+{
+    font-size:30px;
+}
+
+select
+{
+    font-size:30px;
+}
+
+table 
+{
+  border-collapse: collapse;
+  background-color:Purple;
+}
+
+th, td
+{
+    padding:5px;
+}
+
+table, th, td 
+{
+  border: 1px solid black;
+}
+
+.reset{
+    background-color:Red;
+}
+
+.purchase
+{
+    background-color:Green;
+}
+
+.font-size-20px
+{
+    font-size:20px;
+}
+
+.text-center
+{
+    text-align:center ;
+}
+
+.text-right
+{
+    text-align:right ;
+}
+
+.text-left
+{
+    text-align:left;
+}
+
+.div-center
+{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.item
+{
+    width:50vw;
+    margin:auto 50px;
+    display:inline-block;
+}
+
+
+.bg-blue
+{
+    background-color:blue;
+}
+
+
+
