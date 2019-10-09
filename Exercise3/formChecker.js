@@ -12,6 +12,7 @@ function verify()
     {
         alert("Please enter an username");
         return false;
+    }
 
     if(password == 0)
     {
