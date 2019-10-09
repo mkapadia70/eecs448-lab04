@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+	background-color:Red;
+        <script>
+            function reset()
+            {
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("RedBox").value = "";
+                document.getElementById("BlueBox").value = "";
+                document.getElementById("GreenBox").value = "";
+                document.getElementById("shipping").selectIndex = 0;
+            }
+        </script>
+
+        <script src="formChecker.js"></script>
+    </head>
+    <body>
+        <div class="text-center div-center bg-blue">
+            <form action="customerBackend.php" method="post" onsubmit="return verify()">
+		<input type="email" name="username" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password" name="password">
+
+                <div class="div-center">
+                    <div class="item">
+                        <h1 class="text-center">Red Box - $3</h1>
+                        <input type="text" placeholder="Quantity" name="RedBoxQty" id="RedBox">
+                    </div>
+                    <div class="item">
+                        <h1 class="text-center">Blue Box - $1000000</h1>
+                        <input type="text" placeholder="Quantity" name="BlueBoxQty" id="BlueBox">
+                    </div>
+                    <div class="item">
+                        <h1 class="text-center">Green Box - $1
+                        </h1>
+                        <input type="text" placeholder="Quantity" name="GreenBoxQty" id="GreenBox">
+                    </div>
+                </div>
+                <br/>
+                <br/>
+
+                <label>Shipping:</label>
+                <select name="shipping" id="shipping">
+                    <option value="0">Free - 7 days</option>
+                    <option value="5">$5 - 3 days</option>
+                    <option value="50">$50 - overnight</option>
+                </select>
+                <br/>
+                <br/>
+
+                <button onclick="reset()" type="button" class="reset">Reset</button>
+                <button type="submit" class="purchase">Purchase</button>
+            </form>
+        </div>
+    </body>
+</html>
